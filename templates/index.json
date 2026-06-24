@@ -15,6 +15,7 @@
         "template--21507361505575__cfca4268-6358-426c-98ab-d292aeef11e5-slide-1": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/hero.png",
             "image_overlay_opacity": 20,
             "heading": "",
             "title_highlight_color": "#cda984",
