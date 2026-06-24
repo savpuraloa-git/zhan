@@ -1,0 +1,413 @@
+{% doc %}
+  @prompt
+    un pied de page ou je peut mettre plusieur section comme le logo, un menu  et du texte, et je veux pouvoir mettre ces section en réductible ou non 
+{% enddoc %}
+{% comment %}
+  Bloc de pied de page personnalisable avec sections réductibles
+  - Logo
+  - Menu
+  - Texte personnalisé
+{% endcomment %}
+
+<div class="footer-custom-block color-{{ block.settings.color_scheme }} gradient">
+  <div class="footer-custom-block__inner page-width">
+    
+    {%- if block.settings.enable_logo -%}
+      <div class="footer-custom-block__section footer-custom-block__logo {% if block.settings.logo_collapsible %}collapsible-section{% endif %}">
+        {%- if block.settings.logo_collapsible -%}
+          <button type="button" class="collapsible-trigger" aria-expanded="false">
+            <span class="collapsible-trigger__title h4">{{ block.settings.logo_heading }}</span>
+            <svg class="icon icon-caret" aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"/>
+            </svg>
+          </button>
+          <div class="collapsible-content" style="display: none;">
+        {%- else -%}
+          {%- if block.settings.logo_heading != blank -%}
+            <h4 class="footer-custom-block__heading">{{ block.settings.logo_heading }}</h4>
+          {%- endif -%}
+          <div class="footer-custom-block__content">
+        {%- endif -%}
+        
+        {%- if block.settings.logo_image != blank -%}
+          <div class="footer-custom-block__logo-image">
+            {%- assign logo_alt = block.settings.logo_image.alt | default: shop.name | escape -%}
+            {%- assign logo_height = block.settings.logo_width | divided_by: block.settings.logo_image.aspect_ratio -%}
+            {{ block.settings.logo_image | image_url: width: block.settings.logo_width | image_tag:
+              class: 'footer-logo',
+              widths: '50, 100, 150, 200, 250, 300',
+              height: logo_height,
+              width: block.settings.logo_width,
+              alt: logo_alt
+            }}
+          </div>
+        {%- else -%}
+          <div class="footer-custom-block__logo-text h2">
+            {{ shop.name }}
+          </div>
+        {%- endif -%}
+        
+        {%- if block.settings.logo_text != blank -%}
+          <div class="footer-custom-block__logo-description rte">
+            {{ block.settings.logo_text }}
+          </div>
+        {%- endif -%}
+        
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.enable_menu and block.settings.menu != blank -%}
+      <div class="footer-custom-block__section footer-custom-block__menu {% if block.settings.menu_collapsible %}collapsible-section{% endif %}">
+        {%- if block.settings.menu_collapsible -%}
+          <button type="button" class="collapsible-trigger" aria-expanded="false">
+            <span class="collapsible-trigger__title h4">{{ block.settings.menu_heading }}</span>
+            <svg class="icon icon-caret" aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"/>
+            </svg>
+          </button>
+          <div class="collapsible-content" style="display: none;">
+        {%- else -%}
+          {%- if block.settings.menu_heading != blank -%}
+            <h4 class="footer-custom-block__heading">{{ block.settings.menu_heading }}</h4>
+          {%- endif -%}
+          <div class="footer-custom-block__content">
+        {%- endif -%}
+        
+        <ul class="footer-custom-block__menu-list list-unstyled" role="list">
+          {%- for link in linklists[block.settings.menu].links -%}
+            <li class="footer-custom-block__menu-item">
+              <a href="{{ link.url }}" class="link link--text">
+                {{ link.title }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+        
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.enable_text and block.settings.text_content != blank -%}
+      <div class="footer-custom-block__section footer-custom-block__text {% if block.settings.text_collapsible %}collapsible-section{% endif %}">
+        {%- if block.settings.text_collapsible -%}
+          <button type="button" class="collapsible-trigger" aria-expanded="false">
+            <span class="collapsible-trigger__title h4">{{ block.settings.text_heading }}</span>
+            <svg class="icon icon-caret" aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"/>
+            </svg>
+          </button>
+          <div class="collapsible-content" style="display: none;">
+        {%- else -%}
+          {%- if block.settings.text_heading != blank -%}
+            <h4 class="footer-custom-block__heading">{{ block.settings.text_heading }}</h4>
+          {%- endif -%}
+          <div class="footer-custom-block__content">
+        {%- endif -%}
+        
+        <div class="footer-custom-block__text-content rte">
+          {{ block.settings.text_content }}
+        </div>
+        
+        </div>
+      </div>
+    {%- endif -%}
+
+  </div>
+</div>
+
+<style>
+  .footer-custom-block {
+    padding: 40px 0;
+  }
+
+  .footer-custom-block__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
+
+  .footer-custom-block__section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-custom-block__heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .footer-custom-block__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Logo Section */
+  .footer-custom-block__logo-image {
+    margin-bottom: 16px;
+  }
+
+  .footer-custom-block__logo-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer-custom-block__logo-text {
+    margin-bottom: 16px;
+  }
+
+  .footer-custom-block__logo-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Menu Section */
+  .footer-custom-block__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-custom-block__menu-item a {
+    display: inline-block;
+    transition: opacity 0.2s ease;
+  }
+
+  .footer-custom-block__menu-item a:hover {
+    opacity: 0.7;
+  }
+
+  /* Text Section */
+  .footer-custom-block__text-content {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Collapsible Sections */
+  .collapsible-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 12px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+    cursor: pointer;
+    text-align: left;
+    color: rgb(var(--color-foreground));
+  }
+
+  .collapsible-trigger__title {
+    margin: 0;
+  }
+
+  .collapsible-trigger .icon-caret {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .collapsible-trigger[aria-expanded="true"] .icon-caret {
+    transform: rotate(180deg);
+  }
+
+  .collapsible-content {
+    padding-top: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  /* Desktop: sections non réductibles par défaut */
+  @media screen and (min-width: 750px) {
+    .collapsible-section .collapsible-trigger {
+      display: none;
+    }
+
+    .collapsible-section .collapsible-content {
+      display: block !important;
+      padding-top: 0;
+    }
+
+    .collapsible-section .footer-custom-block__heading {
+      display: block;
+    }
+  }
+
+  /* Mobile: sections réductibles si activé */
+  @media screen and (max-width: 749px) {
+    .footer-custom-block__inner {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .collapsible-section .footer-custom-block__heading {
+      display: none;
+    }
+
+    .footer-custom-block__section:not(.collapsible-section) .footer-custom-block__content {
+      padding-top: 20px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const triggers = document.querySelectorAll('.footer-custom-block .collapsible-trigger');
+    
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        const content = this.nextElementSibling;
+        
+        this.setAttribute('aria-expanded', !isExpanded);
+        
+        if (isExpanded) {
+          content.style.display = 'none';
+        } else {
+          content.style.display = 'block';
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Pied de page personnalisé",
+  "class": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "Accent 1"
+        },
+        {
+          "value": "accent-2",
+          "label": "Accent 2"
+        },
+        {
+          "value": "background-1",
+          "label": "Background 1"
+        },
+        {
+          "value": "background-2",
+          "label": "Background 2"
+        },
+        {
+          "value": "inverse",
+          "label": "Inverse"
+        }
+      ],
+      "default": "background-2",
+      "label": "Jeu de couleurs"
+    },
+    {
+      "type": "header",
+      "content": "Section Logo"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_logo",
+      "label": "Activer la section logo",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "logo_heading",
+      "label": "Titre de la section",
+      "default": "À propos"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Image du logo"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Largeur du logo",
+      "default": 150
+    },
+    {
+      "type": "richtext",
+      "id": "logo_text",
+      "label": "Texte descriptif",
+      "default": "<p>Votre description ici.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_collapsible",
+      "label": "Rendre cette section réductible (mobile)",
+      "default": false,
+      "info": "Sur mobile, la section pourra être ouverte/fermée"
+    },
+    {
+      "type": "header",
+      "content": "Section Menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_menu",
+      "label": "Activer la section menu",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "menu_heading",
+      "label": "Titre de la section",
+      "default": "Liens rapides"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "footer"
+    },
+    {
+      "type": "checkbox",
+      "id": "menu_collapsible",
+      "label": "Rendre cette section réductible (mobile)",
+      "default": true,
+      "info": "Sur mobile, la section pourra être ouverte/fermée"
+    },
+    {
+      "type": "header",
+      "content": "Section Texte"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_text",
+      "label": "Activer la section texte",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "text_heading",
+      "label": "Titre de la section",
+      "default": "Informations"
+    },
+    {
+      "type": "richtext",
+      "id": "text_content",
+      "label": "Contenu texte",
+      "default": "<p>Ajoutez votre contenu personnalisé ici.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "text_collapsible",
+      "label": "Rendre cette section réductible (mobile)",
+      "default": true,
+      "info": "Sur mobile, la section pourra être ouverte/fermée"
+    }
+  ]
+}
+{% endschema %}
