@@ -76,7 +76,7 @@
             "compare_price_color": "text",
             "displayed_badge": "custom",
             "icon_scale": 140,
-            "custom_badge_text": "[icon_1] Économisez [amount_saved] ",
+            "custom_badge_text": "[icon_1] Économisez [percentage_saved] ",
             "icon_1": "redeem",
             "filled_icon_1": false,
             "icon_2": "check_circle",
