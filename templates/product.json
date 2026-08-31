@@ -70,16 +70,16 @@
             "margin_bottom": 15
           }
         },
-        "custom_liquid_AUqBEM": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"pv-badge\" role=\"status\" aria-live=\"polite\">\n  <span class=\"pv-dot\" aria-hidden=\"true\">🔥</span>\n  <span class=\"pv-count\">7</span>\n  {% if request.locale.iso_code == 'de' %}\n    <span class=\"pv-label\"> Personen sehen sich diesen Artikel an</span>\n  {% elsif request.locale.iso_code == 'en' %}\n    <span class=\"pv-label\"> people are viewing this item</span>\n  {% else %}\n    <span class=\"pv-label\"> personnes consultent cet article</span>\n  {% endif %}\n</div>\n<script>\n(function(){\n  const badge = document.currentScript?.previousElementSibling;\n  if(!badge || !badge.classList.contains('pv-badge')) return;\n  const countEl = badge.querySelector('.pv-count');\n  const MIN = 3, MAX = 18;\n  let current = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;\n  function clamp(v, min, max){ return Math.min(Math.max(v, min), max); }\n  function update(){\n    const delta = [-2,-1,0,0,1,2][Math.floor(Math.random()*6)];\n    current = clamp(current + delta, MIN, MAX);\n    countEl.textContent = current;\n  }\n  countEl.textContent = current;\n  const timer = setInterval(update, 30000);\n  setTimeout(()=> clearInterval(timer), 5*60*1000);\n})();\n</script>\n<style>\n  .pv-badge{\n    background: #FFF0ED;\n    color: #C0390A;\n    display: inline-flex;\n    align-items: center;\n    gap: 5px;\n    padding: 5px 10px;\n    border-radius: 8px;\n    font-weight: 600;\n    font-size: 12px;\n    width: fit-content;\n    max-width: 100%;\n    box-sizing: border-box;\n    line-height: 1.3;\n    white-space: nowrap;\n  }\n  .pv-dot{\n    font-size: 11px;\n    flex-shrink: 0;\n    animation: pvBlink 1.4s infinite;\n  }\n  @keyframes pvBlink{\n    0%,50%,100%{opacity:1}\n    25%,75%{opacity:.35}\n  }\n  @media (prefers-reduced-motion: reduce){\n    .pv-dot{ animation: none; }\n  }\n  .pv-count{\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n  .pv-label{\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n  }\n  @media (max-width: 480px){\n    .pv-badge{\n      font-size: 11px;\n      padding: 4px 8px;\n      gap: 4px;\n      white-space: nowrap;\n    }\n  }\n  @media (max-width: 360px){\n    .pv-badge{ font-size: 10px; padding: 4px 7px; }\n  }\n</style>"
-          }
-        },
         "custom_liquid_cEGzGb": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{% if request.locale.iso_code == 'de' %}\n  <ul class=\"prod-bullets\">\n    <li>Weichere und hydratisierte Haut ab der ersten Dusche</li>\n    <li>Weniger Rötungen, Juckreiz und Hautirritationen</li>\n    <li>Glänzenderes Haar, weniger Bruch und weicher anzufassen</li>\n  </ul>\n{% elsif request.locale.iso_code == 'en' %}\n  <ul class=\"prod-bullets\">\n    <li>Softer, hydrated skin from the very first shower</li>\n    <li>Less redness, itching and skin irritation</li>\n    <li>Shinier hair, less breakage and softer to the touch</li>\n  </ul>\n{% else %}\n  <ul class=\"prod-bullets\">\n    <li>Peau plus douce et hydratée dès la 1ère douche</li>\n    <li>Moins de rougeurs, démangeaisons et irritations</li>\n    <li>Cheveux plus brillants, moins cassants et plus doux au toucher</li>\n  </ul>\n{% endif %}\n\n<style>\n  .prod-bullets {\n    list-style: none;\n    margin: 8px 0 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 5px;\n  }\n  .prod-bullets li {\n    display: flex;\n    align-items: flex-start;\n    gap: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    color: #2F3A44;\n    line-height: 1.4;\n  }\n  .prod-bullets li::before {\n    content: \"\";\n    display: block;\n    flex-shrink: 0;\n    width: 16px;\n    height: 16px;\n    margin-top: 1px;\n    background: rgba(201,214,207,0.30);\n    border-radius: 50%;\n    background-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 6l2.5 2.5 4.5-4.5' stroke='%23C9D6CF' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\");\n    background-size: 10px 10px;\n    background-repeat: no-repeat;\n    background-position: center;\n  }\n</style>"
+          }
+        },
+        "custom_liquid_AUqBEM": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"pv-badge\" role=\"status\" aria-live=\"polite\">\n  <span class=\"pv-dot\" aria-hidden=\"true\">🔥</span>\n  <span class=\"pv-count\">7</span>\n  {% if request.locale.iso_code == 'de' %}\n    <span class=\"pv-label\"> Personen sehen sich diesen Artikel an</span>\n  {% elsif request.locale.iso_code == 'en' %}\n    <span class=\"pv-label\"> people are viewing this item</span>\n  {% else %}\n    <span class=\"pv-label\"> personnes consultent cet article</span>\n  {% endif %}\n</div>\n<script>\n(function(){\n  const badge = document.currentScript?.previousElementSibling;\n  if(!badge || !badge.classList.contains('pv-badge')) return;\n  const countEl = badge.querySelector('.pv-count');\n  const MIN = 3, MAX = 18;\n  let current = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;\n  function clamp(v, min, max){ return Math.min(Math.max(v, min), max); }\n  function update(){\n    const delta = [-2,-1,0,0,1,2][Math.floor(Math.random()*6)];\n    current = clamp(current + delta, MIN, MAX);\n    countEl.textContent = current;\n  }\n  countEl.textContent = current;\n  const timer = setInterval(update, 30000);\n  setTimeout(()=> clearInterval(timer), 5*60*1000);\n})();\n</script>\n<style>\n  .pv-badge{\n    background: #FFF0ED;\n    color: #C0390A;\n    display: inline-flex;\n    align-items: center;\n    gap: 5px;\n    padding: 5px 10px;\n    border-radius: 8px;\n    font-weight: 600;\n    font-size: 12px;\n    width: fit-content;\n    max-width: 100%;\n    box-sizing: border-box;\n    line-height: 1.3;\n    white-space: nowrap;\n  }\n  .pv-dot{\n    font-size: 11px;\n    flex-shrink: 0;\n    animation: pvBlink 1.4s infinite;\n  }\n  @keyframes pvBlink{\n    0%,50%,100%{opacity:1}\n    25%,75%{opacity:.35}\n  }\n  @media (prefers-reduced-motion: reduce){\n    .pv-dot{ animation: none; }\n  }\n  .pv-count{\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n  .pv-label{\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n  }\n  @media (max-width: 480px){\n    .pv-badge{\n      font-size: 11px;\n      padding: 4px 8px;\n      gap: 4px;\n      white-space: nowrap;\n    }\n  }\n  @media (max-width: 360px){\n    .pv-badge{ font-size: 10px; padding: 4px 7px; }\n  }\n</style>"
           }
         },
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
@@ -237,6 +237,14 @@
             "margin_bottom": 24
           }
         },
+        "payment_badges_mLQLmw": {
+          "type": "payment_badges",
+          "settings": {
+            "enabled_payment_types": "",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5": {
           "type": "sticky_atc",
           "settings": {
@@ -359,12 +367,13 @@
         "title",
         "text_UbAwFX",
         "price",
-        "custom_liquid_AUqBEM",
         "custom_liquid_cEGzGb",
+        "custom_liquid_AUqBEM",
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
         "inventory_8kMR3a",
         "04ba004e-2f54-4936-8b1c-8bcadf6573f6",
         "buy_buttons",
+        "payment_badges_mLQLmw",
         "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
         "collapsible_tab_bkKATW",
         "collapsible_tab_y33TR8",
