@@ -12,12 +12,43 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "text_UbAwFX": {
+          "type": "text",
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "<em>Élimine le calcaire et le chlore qui abîment votre peau et vos cheveux à chaque douche</em>",
+            "text_2": "",
+            "text_3": "",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "horizontal",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
             "text_size": "h1",
             "title_alignment": "left",
-            "uppercase_title": false,
+            "uppercase_title": true,
             "margin_top": 0,
             "margin_bottom": 0
           }
@@ -37,6 +68,12 @@
             "filled_icon_2": false,
             "margin_top": 9,
             "margin_bottom": 15
+          }
+        },
+        "custom_liquid_cEGzGb": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if request.locale.iso_code == 'de' %}\n  <ul class=\"prod-bullets\">\n    <li>Weichere und hydratisierte Haut ab der ersten Dusche</li>\n    <li>Weniger Rötungen, Juckreiz und Hautirritationen</li>\n    <li>Glänzenderes Haar, weniger Bruch und weicher anzufassen</li>\n  </ul>\n{% elsif request.locale.iso_code == 'en' %}\n  <ul class=\"prod-bullets\">\n    <li>Softer, hydrated skin from the very first shower</li>\n    <li>Less redness, itching and skin irritation</li>\n    <li>Shinier hair, less breakage and softer to the touch</li>\n  </ul>\n{% else %}\n  <ul class=\"prod-bullets\">\n    <li>Peau plus douce et hydratée dès la 1ère douche</li>\n    <li>Moins de rougeurs, démangeaisons et irritations</li>\n    <li>Cheveux plus brillants, moins cassants et plus doux au toucher</li>\n  </ul>\n{% endif %}\n\n<style>\n  .prod-bullets {\n    list-style: none;\n    margin: 8px 0 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 5px;\n  }\n  .prod-bullets li {\n    display: flex;\n    align-items: flex-start;\n    gap: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    color: #2F3A44;\n    line-height: 1.4;\n  }\n  .prod-bullets li::before {\n    content: \"\";\n    display: block;\n    flex-shrink: 0;\n    width: 16px;\n    height: 16px;\n    margin-top: 1px;\n    background: rgba(201,214,207,0.30);\n    border-radius: 50%;\n    background-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 6l2.5 2.5 4.5-4.5' stroke='%23C9D6CF' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\");\n    background-size: 10px 10px;\n    background-repeat: no-repeat;\n    background-position: center;\n  }\n</style>"
           }
         },
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
@@ -313,8 +350,10 @@
         }
       },
       "block_order": [
+        "text_UbAwFX",
         "title",
         "price",
+        "custom_liquid_cEGzGb",
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
         "inventory_8kMR3a",
         "04ba004e-2f54-4936-8b1c-8bcadf6573f6",
