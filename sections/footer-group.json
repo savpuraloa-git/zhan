@@ -69,8 +69,8 @@
         "text_JxRgR3": {
           "type": "text",
           "settings": {
-            "heading": "<p>ZHANIMO</p>",
-            "color": "#d7a975",
+            "heading": "<p>PURALOA</p>",
+            "color": "#78A78E",
             "font_size": 13,
             "richtext": "",
             "richtext_color": "#ffd5a3",
@@ -247,9 +247,9 @@
             "logo_collapsible": false,
             "enable_menu": true,
             "menu_heading": "Liens rapides",
-            "menu": "footer",
+            "menu": "main-menu",
             "menu_collapsible": true,
-            "enable_text": true,
+            "enable_text": false,
             "text_heading": "Informations",
             "text_content": "",
             "text_collapsible": true
