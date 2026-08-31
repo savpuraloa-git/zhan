@@ -71,10 +71,10 @@
         "price": {
           "type": "price",
           "settings": {
-            "layout": "price_first",
-            "price_color": "accent-1",
-            "compare_price_color": "text",
-            "displayed_badge": "sale",
+            "layout": "price_second",
+            "price_color": "outline-button",
+            "compare_price_color": "accent-2",
+            "displayed_badge": "custom",
             "icon_scale": 140,
             "custom_badge_text": "[icon_1] SPECIAL OFFER",
             "icon_1": "redeem",
@@ -177,7 +177,7 @@
             "icon_scale": 120,
             "icon_spacing": 10,
             "display_price": false,
-            "enable_custom_color": false,
+            "enable_custom_color": true,
             "custom_color": "#53af01",
             "enable_secondary_btn": false,
             "secondary_btn_label": "Buy It Now",
