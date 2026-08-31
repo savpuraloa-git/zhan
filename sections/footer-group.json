@@ -207,7 +207,7 @@
         "padding_bottom": 0,
         "padding_left": 10,
         "padding_right": 10,
-        "mobile_display": "slideshow",
+        "mobile_display": "stacked",
         "mobile_columns": "1fr 1fr",
         "progress_background_color": "",
         "progress_foreground_color": "linear-gradient(177deg, rgba(17, 17, 17, 1) 3%, rgba(17, 17, 17, 1) 100%)",
