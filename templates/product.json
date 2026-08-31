@@ -251,14 +251,14 @@
         "collapsible_tab_bkKATW": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Sécurité avancée",
+            "heading": "Comment l'utiliser",
             "heading_size": "medium",
-            "icon": "security",
+            "icon": "",
             "filled_icon": false,
             "collapse_icon": "carret",
             "display_top_border": true,
             "open": false,
-            "content": "<p>La serrure Secureo utilise une technologie biométrique précise qui reconnaît votre empreinte digitale instantanément. Seules les personnes autorisées peuvent accéder à votre domicile, ce qui garantit une sécurité renforcée pour votre maison et votre famille.</p>",
+            "content": "<p><strong>Step 1</strong></p><h3>Remove your existing shower head</h3><p><strong>Step 2</strong></p><h3>Screw on your HydroPure Shower Head</h3><p><strong>Step 3</strong></p><h3>Run water for 20 seconds</h3>",
             "page": "",
             "margin_top": 24,
             "margin_bottom": 0
@@ -266,16 +266,15 @@
         },
         "collapsible_tab_y33TR8": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "Installation simple",
+            "heading": "Contenu de la boîte",
             "heading_size": "medium",
-            "icon": "construction",
+            "icon": "",
             "filled_icon": false,
             "collapse_icon": "carret",
             "display_top_border": true,
             "open": false,
-            "content": "<p>La serrure Secureo est compatible avec la majorité des portes standards. Son installation est rapide et ne nécessite pas de travaux complexes. En quelques minutes seulement, votre porte devient intelligente et sécurisée.</p>",
+            "content": "<p>Tout ce dont vous avez besoin pour améliorer votre routine de douche : </p><ul><li>Pommeau de douche filtrante Puraloa</li><li>Cartouche filtrante au charbon actif (préinstallée)</li><li>Éponge Loofah naturel pour un nettoyage et une exfoliation en douceur</li><li>Brosse exfoliante pour un nettoyage en profondeur</li><li>Guide d'installation rapide</li></ul>",
             "page": "",
             "margin_top": 24,
             "margin_bottom": 0
@@ -283,16 +282,15 @@
         },
         "collapsible_tab_bfgBrD": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "Installation simple",
+            "heading": "Caractéristiques du produit",
             "heading_size": "medium",
-            "icon": "group",
+            "icon": "",
             "filled_icon": false,
             "collapse_icon": "carret",
             "display_top_border": true,
             "open": false,
-            "content": "<p>Enregistrez plusieurs empreintes digitales afin de permettre l’accès aux membres de votre famille ou aux personnes de confiance. Une solution idéale pour les parents, enfants ou colocataires.</p>",
+            "content": "<ul><li>Type de filtre : charbon actif + vitamine C</li><li>Système de filtration : double filtration (charbon actif )</li><li>Durée de vie du filtre : 10 000 à 12 000 L</li><li>Durée d'utilisation moyenne : jusqu'à 3 mois</li><li>Débit : 5 à 7 L/min</li><li>Température de fonctionnement : 5 °C à 55 °C</li><li>Taille du filetage : ½ pouce (1,27 cm) – Compatible avec 90% des bras de douche standard</li><li>Finition : mate</li><li>Matériau : ABS haut de gamme + acier inoxydable</li></ul>",
             "page": "",
             "margin_top": 24,
             "margin_bottom": 0
@@ -300,16 +298,15 @@
         },
         "collapsible_tab_tFfV9T": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "Accès rapide et sans clé",
+            "heading": "Notre Filtre",
             "heading_size": "medium",
-            "icon": "bolt",
+            "icon": "",
             "filled_icon": false,
             "collapse_icon": "carret",
             "display_top_border": true,
             "open": false,
-            "content": "<p>Plus besoin de chercher vos clés dans votre sac ou vos poches. Avec Secureo, un simple contact de votre doigt suffit pour ouvrir la porte en moins d’une seconde.</p>",
+            "content": "<p><em><strong>Quelques bienfaits de notre filtration :</strong></em></p><ul><li>Contribue à neutraliser le chlore</li><li>Rafraîchit l'eau de la douche</li><li>Contribue à rendre la peau et les cheveux plus doux au toucher</li><li>Filtration au charbon actif</li><li>Contribue à réduire la teneur en chlore</li><li>Contribue à réduire les odeurs et les sédiments</li><li>Contribue à filtrer les impuretés couramment présentes dans l'eau du robinet</li></ul>",
             "page": "",
             "margin_top": 24,
             "margin_bottom": 0
