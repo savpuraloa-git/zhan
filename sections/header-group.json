@@ -182,7 +182,6 @@
     },
     "ss_back_to_top_button_WwcmgR": {
       "type": "ss-back-to-top-button",
-      "disabled": true,
       "name": "SS - Back to top button",
       "settings": {
         "hide_on_mobile": false,
