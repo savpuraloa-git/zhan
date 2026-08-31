@@ -12,6 +12,21 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "trustpilot_stars_HW97nb": {
+          "type": "trustpilot_stars",
+          "settings": {
+            "rating": 4.5,
+            "star_color": "#00b67a",
+            "bg_star_color": "#c8c8c8",
+            "star_symbol_color": "#ffffff",
+            "label": "<em>4.8/5 sur +1500 clients</em>",
+            "size": 12,
+            "alignment": "flex-start",
+            "scroll_id": "",
+            "margin_top": 15,
+            "margin_bottom": 9
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -136,19 +151,19 @@
             "icon_color": "accent-1",
             "desktop_icon_size": 48,
             "desktop_spacing": 12,
-            "desktop_text_size": 18,
+            "desktop_text_size": 16,
             "mobile_icon_size": 40,
             "mobile_spacing": 10,
-            "mobile_text_size": 14,
+            "mobile_text_size": 12,
             "icon_1": "favorite",
             "icon_1_fill": false,
-            "heading_1": "Heading",
+            "heading_1": "+1500 Clients Satisfait",
             "icon_2": "undo",
             "icon_2_fill": false,
-            "heading_2": "Heading",
-            "icon_3": "local_shipping",
+            "heading_2": "Satisfait ou Remboursé",
+            "icon_3": "Check Circle",
             "icon_3_fill": false,
-            "heading_3": "Heading",
+            "heading_3": "Recommandé Dermatologues",
             "margin_top": 24,
             "margin_bottom": 6
           }
@@ -218,9 +233,23 @@
             "mobile_transparent_bg": false
           }
         },
+        "complementary_PmFDQf": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "collapsible_tab_bkKATW": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Sécurité avancée",
             "heading_size": "medium",
@@ -305,6 +334,7 @@
         }
       },
       "block_order": [
+        "trustpilot_stars_HW97nb",
         "title",
         "text_UbAwFX",
         "price",
@@ -317,6 +347,7 @@
         "payment_badges_mLQLmw",
         "custom_liquid_TVpRrn",
         "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
+        "complementary_PmFDQf",
         "collapsible_tab_bkKATW",
         "collapsible_tab_y33TR8",
         "collapsible_tab_bfgBrD",
