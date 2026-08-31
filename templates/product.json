@@ -234,14 +234,14 @@
             "secondary_btn_enable_custom_color": false,
             "secondary_btn_custom_color": "#dd1d1d",
             "margin_top": 24,
-            "margin_bottom": 24
+            "margin_bottom": 3
           }
         },
         "payment_badges_mLQLmw": {
           "type": "payment_badges",
           "settings": {
-            "enabled_payment_types": "",
-            "margin_top": 15,
+            "enabled_payment_types": "american_express, apple_pay, google_pay,  master, paypal,visa ,",
+            "margin_top": 0,
             "margin_bottom": 15
           }
         },
