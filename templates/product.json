@@ -258,8 +258,8 @@
             "collapse_icon": "carret",
             "display_top_border": true,
             "open": false,
-            "content": "<p><strong>Step 1</strong></p><h3>Remove your existing shower head</h3><p><strong>Step 2</strong></p><h3>Screw on your HydroPure Shower Head</h3><p><strong>Step 3</strong></p><h3>Run water for 20 seconds</h3>",
-            "page": "",
+            "content": "",
+            "page": "comment-ca-marche",
             "margin_top": 24,
             "margin_bottom": 0
           }
