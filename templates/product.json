@@ -71,12 +71,12 @@
         "price": {
           "type": "price",
           "settings": {
-            "layout": "price_second",
+            "layout": "price_first",
             "price_color": "outline-button",
-            "compare_price_color": "accent-2",
+            "compare_price_color": "text",
             "displayed_badge": "custom",
             "icon_scale": 140,
-            "custom_badge_text": "[icon_1] SPECIAL OFFER",
+            "custom_badge_text": "[icon_1] Économisez [amount_saved] ",
             "icon_1": "redeem",
             "filled_icon_1": false,
             "icon_2": "check_circle",
