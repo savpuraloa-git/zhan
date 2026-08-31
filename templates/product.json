@@ -12,11 +12,21 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h1",
+            "title_alignment": "left",
+            "uppercase_title": true,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
         "text_UbAwFX": {
           "type": "text",
           "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
+            "mobile_text_size": 12,
+            "desktop_text_size": 13,
             "alignment": "left",
             "text_color": "#121212",
             "text_1": "<em>Élimine le calcaire et le chlore qui abîment votre peau et vos cheveux à chaque douche</em>",
@@ -43,16 +53,6 @@
             "margin_bottom": 15
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {
-            "text_size": "h1",
-            "title_alignment": "left",
-            "uppercase_title": true,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -68,6 +68,12 @@
             "filled_icon_2": false,
             "margin_top": 9,
             "margin_bottom": 15
+          }
+        },
+        "custom_liquid_AUqBEM": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"pv-badge\" role=\"status\" aria-live=\"polite\">\n  <span class=\"pv-dot\" aria-hidden=\"true\">🔥</span>\n  <span class=\"pv-count\">7</span>\n  {% if request.locale.iso_code == 'de' %}\n    <span class=\"pv-label\"> Personen sehen sich diesen Artikel an</span>\n  {% elsif request.locale.iso_code == 'en' %}\n    <span class=\"pv-label\"> people are viewing this item</span>\n  {% else %}\n    <span class=\"pv-label\"> personnes consultent cet article</span>\n  {% endif %}\n</div>\n<script>\n(function(){\n  const badge = document.currentScript?.previousElementSibling;\n  if(!badge || !badge.classList.contains('pv-badge')) return;\n  const countEl = badge.querySelector('.pv-count');\n  const MIN = 3, MAX = 18;\n  let current = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;\n  function clamp(v, min, max){ return Math.min(Math.max(v, min), max); }\n  function update(){\n    const delta = [-2,-1,0,0,1,2][Math.floor(Math.random()*6)];\n    current = clamp(current + delta, MIN, MAX);\n    countEl.textContent = current;\n  }\n  countEl.textContent = current;\n  const timer = setInterval(update, 30000);\n  setTimeout(()=> clearInterval(timer), 5*60*1000);\n})();\n</script>\n<style>\n  .pv-badge{\n    background: #FFF0ED;\n    color: #C0390A;\n    display: inline-flex;\n    align-items: center;\n    gap: 5px;\n    padding: 5px 10px;\n    border-radius: 8px;\n    font-weight: 600;\n    font-size: 12px;\n    width: fit-content;\n    max-width: 100%;\n    box-sizing: border-box;\n    line-height: 1.3;\n    white-space: nowrap;\n  }\n  .pv-dot{\n    font-size: 11px;\n    flex-shrink: 0;\n    animation: pvBlink 1.4s infinite;\n  }\n  @keyframes pvBlink{\n    0%,50%,100%{opacity:1}\n    25%,75%{opacity:.35}\n  }\n  @media (prefers-reduced-motion: reduce){\n    .pv-dot{ animation: none; }\n  }\n  .pv-count{\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n  .pv-label{\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n  }\n  @media (max-width: 480px){\n    .pv-badge{\n      font-size: 11px;\n      padding: 4px 8px;\n      gap: 4px;\n      white-space: nowrap;\n    }\n  }\n  @media (max-width: 360px){\n    .pv-badge{ font-size: 10px; padding: 4px 7px; }\n  }\n</style>"
           }
         },
         "custom_liquid_cEGzGb": {
@@ -350,9 +356,10 @@
         }
       },
       "block_order": [
-        "text_UbAwFX",
         "title",
+        "text_UbAwFX",
         "price",
+        "custom_liquid_AUqBEM",
         "custom_liquid_cEGzGb",
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
         "inventory_8kMR3a",
