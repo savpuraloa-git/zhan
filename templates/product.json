@@ -129,6 +129,30 @@
             "margin_bottom": 15
           }
         },
+        "icon_with_text_pLG483": {
+          "type": "icon_with_text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_color": "accent-1",
+            "desktop_icon_size": 48,
+            "desktop_spacing": 12,
+            "desktop_text_size": 18,
+            "mobile_icon_size": 40,
+            "mobile_spacing": 10,
+            "mobile_text_size": 14,
+            "icon_1": "favorite",
+            "icon_1_fill": false,
+            "heading_1": "Heading",
+            "icon_2": "undo",
+            "icon_2_fill": false,
+            "heading_2": "Heading",
+            "icon_3": "local_shipping",
+            "icon_3_fill": false,
+            "heading_3": "Heading",
+            "margin_top": 24,
+            "margin_bottom": 6
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -288,6 +312,7 @@
         "custom_liquid_AUqBEM",
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
         "inventory_8kMR3a",
+        "icon_with_text_pLG483",
         "buy_buttons",
         "payment_badges_mLQLmw",
         "custom_liquid_TVpRrn",
