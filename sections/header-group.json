@@ -71,14 +71,14 @@
     "fe1c8c67-b84c-4466-a515-70df3134c1c0": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_gjzGNc": {
+        "announcement_JehKq7": {
           "type": "announcement",
           "settings": {
-            "text": "<em>Payer en 4 fois avec Klarna !</em>",
+            "text": "Stock Limités !",
             "text_alignment": "center",
             "mobile_text_size": 12,
             "desktop_text_size": 14,
-            "icon": "storefront",
+            "icon": "pets",
             "filled_icon": false,
             "mobile_icon_size": 20,
             "desktop_icon_size": 26,
@@ -89,14 +89,14 @@
             "displayed_products": ""
           }
         },
-        "announcement_JehKq7": {
+        "announcement_gjzGNc": {
           "type": "announcement",
           "settings": {
-            "text": "Pour le bien-être de vos animaux",
+            "text": "<em>Payer en 4 fois avec Klarna !</em>",
             "text_alignment": "center",
             "mobile_text_size": 12,
             "desktop_text_size": 14,
-            "icon": "pets",
+            "icon": "storefront",
             "filled_icon": false,
             "mobile_icon_size": 20,
             "desktop_icon_size": 26,
@@ -127,8 +127,8 @@
         }
       },
       "block_order": [
-        "announcement_gjzGNc",
         "announcement_JehKq7",
+        "announcement_gjzGNc",
         "sections--21450414096679__fe1c8c67-b84c-4466-a515-70df3134c1c0-announcement-1"
       ],
       "settings": {
