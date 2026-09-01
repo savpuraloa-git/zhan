@@ -57,11 +57,11 @@
         "padding_right": 0,
         "video": "shopify://files/videos/hf_20260819_124932_95294d44-f501-41e7-9353-8864308c7b38.mp4",
         "video_inline": true,
-        "video_autoplay": false,
+        "video_autoplay": true,
         "video_loop": true,
         "video_controls": false,
-        "video_muted": false,
-        "big_play_pause_button": true
+        "video_muted": true,
+        "big_play_pause_button": false
       }
     },
     "cfca4268-6358-426c-98ab-d292aeef11e5": {
