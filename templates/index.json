@@ -9,59 +9,25 @@
  */
 {
   "sections": {
-    "comparison_slider_TCTBbk": {
-      "type": "comparison-slider",
-      "disabled": true,
-      "name": "Before & After slider",
+    "sp_video_standalone_ckfcaR": {
+      "type": "sp-video-standalone",
+      "name": "🚀SP - Video Standalone",
       "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "title": "Before & After slider",
-        "title_highlight_color": "#6D388B",
-        "heading_size": "h1",
-        "text": "<p>Highlight key differences between before and after using your product.</p>",
-        "button_label": "",
-        "link": "",
-        "button_style_secondary": false,
-        "atc_button_label": "",
-        "atc_product": "",
-        "atc_skip_cart": false,
-        "color_scheme": "background-1",
-        "layout": "slider_second",
-        "before_label": "Before",
-        "after_label": "After",
-        "labels_color_scheme": "accent-1",
-        "line_color": "background-1",
-        "arrows_style": "circle",
-        "before_image": "shopify://shop_images/Filtre_avant.png",
-        "after_image": "shopify://shop_images/Filtre_apr_s.png",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "custom_colors_background": "#FFFFFF",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#2E2A39",
-        "custom_colors_solid_button_background": "#dd1d1d",
-        "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#dd1d1d"
-      }
-    },
-    "sp_video_modal_tRKKHF": {
-      "type": "sp-video-modal",
-      "name": "🚀SP - Video Modal",
-      "settings": {
-        "modal_target": "#video-modal",
-        "background_color": "linear-gradient(164deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
+        "background_color": "linear-gradient(164deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))",
+        "max_width": 3000,
+        "padding_top": 25,
+        "padding_bottom": 25,
+        "padding_left": 10,
+        "padding_right": 10,
         "video": "shopify://files/videos/hf_20260819_124932_95294d44-f501-41e7-9353-8864308c7b38.mp4",
         "video_inline": true,
         "video_autoplay": true,
         "video_loop": true,
         "video_controls": false,
         "video_muted": true,
-        "big_play_pause_button": false
+        "big_play_pause_button": true,
+        "media_radius": 5,
+        "media_shadow": true
       }
     },
     "cfca4268-6358-426c-98ab-d292aeef11e5": {
@@ -980,8 +946,7 @@
     }
   },
   "order": [
-    "comparison_slider_TCTBbk",
-    "sp_video_modal_tRKKHF",
+    "sp_video_standalone_ckfcaR",
     "cfca4268-6358-426c-98ab-d292aeef11e5",
     "custom_liquid_pQfN7T",
     "horizontal_ticker_RVfnVn",
