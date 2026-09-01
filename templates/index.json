@@ -392,106 +392,6 @@
         "border_thickness": 0
       }
     },
-    "image_with_text_rTB7Pt": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_mXkekk": {
-          "type": "caption",
-          "settings": {
-            "caption": "ZHANIMO",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_bEtgC8": {
-          "type": "heading",
-          "settings": {
-            "title": "Une litière qui vous facilite la vie au quotidien",
-            "title_highlight_color": "#6d388b",
-            "heading_size": "h1"
-          }
-        },
-        "text_qptkTB": {
-          "type": "text",
-          "settings": {
-            "text": "<p><em>Fini les corvées quotidiennes. La litière Zhanimo détecte, nettoie et stocke les déchets automatiquement — pour un intérieur toujours propre, sans odeur, sans effort.</em></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_mXkekk",
-        "heading_bEtgC8",
-        "text_qptkTB"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "video_autoplay": true,
-        "video_loop": true,
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "section_color_scheme": "background-1",
-        "full_desktop_width": true,
-        "content_layout": "no-overlap",
-        "desktop_media_width": 50,
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_full_media_width": false,
-        "mobile_direction": "normal",
-        "mobile_image_quanlity": "2",
-        "mobile_content_alignment": "left",
-        "mobile_padding_top": 16,
-        "mobile_padding_bottom": 16,
-        "desktop_padding_top": 36,
-        "desktop_padding_bottom": 36,
-        "custom_colors_background": "#2e2a39",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#ffffff",
-        "custom_colors_solid_button_background": "#dd1d1d",
-        "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#dd1d1d",
-        "custom_section_colors_background": "#ffffff",
-        "custom_section_gradient_background": ""
-      }
-    },
-    "image_with_text_tBUdpy": {
-      "type": "image-with-text",
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "display_id": false,
-        "visibility": "desktop-hidden",
-        "video_autoplay": true,
-        "video_loop": true,
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "section_color_scheme": "background-1",
-        "full_desktop_width": true,
-        "content_layout": "no-overlap",
-        "desktop_media_width": 50,
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_full_media_width": false,
-        "mobile_direction": "normal",
-        "mobile_image_quanlity": "2",
-        "mobile_content_alignment": "left",
-        "mobile_padding_top": 16,
-        "mobile_padding_bottom": 16,
-        "desktop_padding_top": 36,
-        "desktop_padding_bottom": 36,
-        "custom_colors_background": "#2e2a39",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#ffffff",
-        "custom_colors_solid_button_background": "#dd1d1d",
-        "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#dd1d1d",
-        "custom_section_colors_background": "#ffffff",
-        "custom_section_gradient_background": ""
-      }
-    },
     "ss_wave_2_HAkzmC": {
       "type": "ss-wave-2",
       "name": "SS - Wave #2",
@@ -831,8 +731,6 @@
     "ss_wave_2_Ggrapx",
     "horizontal_ticker_q8cdNH",
     "ss_wave_2_WahfN6",
-    "image_with_text_rTB7Pt",
-    "image_with_text_tBUdpy",
     "ss_wave_2_HAkzmC",
     "horizontal_ticker_ViE8PD",
     "ss_wave_2_YyFtcx",
