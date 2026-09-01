@@ -9,25 +9,39 @@
  */
 {
   "sections": {
-    "sp_video_standalone_ckfcaR": {
-      "type": "sp-video-standalone",
-      "name": "🚀SP - Video Standalone",
+    "sp_video_hero_HREgNe": {
+      "type": "sp-video-hero",
+      "name": "🚀SP - Video Hero",
       "settings": {
+        "text_font": "system_ui_n4",
+        "text_size": 15,
+        "headline_font": "system_ui_n4",
+        "headline_size": 35,
         "background_color": "linear-gradient(164deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))",
-        "max_width": 3000,
-        "padding_top": 25,
-        "padding_bottom": 25,
+        "cover_background": "linear-gradient(164deg, rgba(17, 17, 17, 1), rgba(85, 85, 85, 1) 100%)",
+        "cover_opacity": 25,
+        "button_background_color": "linear-gradient(164deg, rgba(17, 17, 17, 1), rgba(51, 51, 51, 1) 100%)",
+        "button_text_color": "#ffffff",
+        "text_color": "#ffffff",
+        "box_alignment": "left",
+        "text_alignment": "left",
+        "max_width": 5000,
+        "padding_top": 500,
+        "padding_bottom": 85,
         "padding_left": 10,
         "padding_right": 10,
-        "video": "shopify://files/videos/hf_20260819_124932_95294d44-f501-41e7-9353-8864308c7b38.mp4",
+        "element_spacing": 15,
+        "headline": "<strong>This is our hero tagline</strong>",
+        "content": "",
+        "cta": "Shop Now",
+        "cta_link": "#",
+        "cta_animate": true,
+        "hero_video": "shopify://files/videos/hf_20260819_124932_95294d44-f501-41e7-9353-8864308c7b38.mp4",
         "video_inline": true,
         "video_autoplay": true,
         "video_loop": true,
         "video_controls": false,
-        "video_muted": true,
-        "big_play_pause_button": true,
-        "media_radius": 5,
-        "media_shadow": true
+        "video_muted": true
       }
     },
     "cfca4268-6358-426c-98ab-d292aeef11e5": {
@@ -946,7 +960,7 @@
     }
   },
   "order": [
-    "sp_video_standalone_ckfcaR",
+    "sp_video_hero_HREgNe",
     "cfca4268-6358-426c-98ab-d292aeef11e5",
     "custom_liquid_pQfN7T",
     "horizontal_ticker_RVfnVn",
