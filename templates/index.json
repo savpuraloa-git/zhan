@@ -17,7 +17,7 @@
         "text_size": 15,
         "headline_font": "system_ui_n4",
         "headline_size": 35,
-        "background_color": "linear-gradient(164deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))",
+        "background_color": "linear-gradient(164deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
         "cover_background": "linear-gradient(164deg, rgba(120, 167, 142, 1), rgba(85, 85, 85, 1) 100%)",
         "cover_opacity": 25,
         "button_background_color": "linear-gradient(164deg, rgba(17, 17, 17, 1), rgba(51, 51, 51, 1) 100%)",
@@ -27,7 +27,7 @@
         "text_alignment": "left",
         "max_width": 5000,
         "padding_top": 500,
-        "padding_bottom": 85,
+        "padding_bottom": 5,
         "padding_left": 10,
         "padding_right": 10,
         "element_spacing": 15,
@@ -44,57 +44,9 @@
         "video_muted": true
       }
     },
-    "cfca4268-6358-426c-98ab-d292aeef11e5": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21507361505575__cfca4268-6358-426c-98ab-d292aeef11e5-slide-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/hero.png",
-            "image_overlay_opacity": 20,
-            "heading": "",
-            "title_highlight_color": "#cda984",
-            "heading_size": "h1",
-            "subheading": "Paiement en plusieurs fois disponibles !",
-            "button_label": "DÉCOUVRIR",
-            "link": "shopify://products/litiere-automatique-pour-chat",
-            "button_style_secondary": true,
-            "atc_button_label": "",
-            "atc_product": "showerhead-filter",
-            "atc_skip_cart": false,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "color_scheme": "custom",
-            "transparent_container_color": "white",
-            "text_alignment_mobile": "left",
-            "custom_colors_background": "#ffffff",
-            "custom_gradient_background": "",
-            "custom_colors_text": "#ffffff",
-            "custom_colors_solid_button_background": "#d7a975",
-            "custom_colors_solid_button_text": "#ffffff",
-            "custom_colors_outline_button": "#d7a975"
-          }
-        }
-      },
-      "block_order": [
-        "template--21507361505575__cfca4268-6358-426c-98ab-d292aeef11e5-slide-1"
-      ],
-      "settings": {
-        "visibility": "always-display",
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "desktop_pagination_position": "over",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "show_text_below": false,
-        "mobile_pagination_position": "under",
-        "accessibility_info": "zhanimo"
-      }
-    },
     "custom_liquid_pQfN7T": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "display_id": false,
@@ -103,6 +55,22 @@
         "color_scheme": "background-1",
         "padding_top": 12,
         "padding_bottom": 12
+      }
+    },
+    "section_divider_8b9Xag": {
+      "type": "section-divider",
+      "name": "Section divider",
+      "settings": {
+        "visibility": "always-display",
+        "shape": "waves_3",
+        "flip_horizontal": false,
+        "flip_vertical": false,
+        "shape_color": "accent-1",
+        "custom_shape_color": "#dd1d1d",
+        "background_color": "background-1",
+        "custom_background_color": "#FFFFFF",
+        "padding_top": 52,
+        "padding_bottom": 0
       }
     },
     "horizontal_ticker_RVfnVn": {
@@ -164,9 +132,25 @@
         "mobile_padding_bottom": 12,
         "desktop_padding_top": 16,
         "desktop_padding_bottom": 16,
-        "custom_colors_background": "#f4f4f4",
+        "custom_colors_background": "#C9D6CF",
         "custom_gradient_background": "",
-        "custom_colors_text": "#2e2a39"
+        "custom_colors_text": "#FFFFFF"
+      }
+    },
+    "section_divider_8Kr7kR": {
+      "type": "section-divider",
+      "name": "Section divider",
+      "settings": {
+        "visibility": "always-display",
+        "shape": "waves_3",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "shape_color": "accent-1",
+        "custom_shape_color": "#dd1d1d",
+        "background_color": "background-1",
+        "custom_background_color": "#FFFFFF",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "featured_product_86AeAe": {
@@ -202,7 +186,7 @@
         "variant_picker_wNP7PT": {
           "type": "variant_picker",
           "settings": {
-            "picker_types": "pills, pills, pills",
+            "picker_types": "swatches, pills,",
             "custom_labels": "",
             "disable_prepend": false,
             "swatches_size": "medium",
@@ -239,96 +223,7 @@
         "custom_liquid_3ttgpY": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"lb-wrap\">\n  <div class=\"lb-head\">\n    <span class=\"lb-ico\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#B88B59\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg></span>\n    <strong>Pourquoi la litière Zhanimo ?</strong>\n  </div>\n  <ul class=\"lb-list\">\n    <li><span class=\"lb-dot\">✔</span> Nettoyage <strong>automatique</strong> après chaque passage</li>\n    <li><span class=\"lb-dot\">✔</span> <strong>Zéro odeur</strong> — bac hermétique + charbon actif</li>\n    <li><span class=\"lb-dot\">✔</span> <strong>Suivi santé</strong> & alertes via appli</li>\n    <li><span class=\"lb-dot\">✔</span> Moteur <strong>silencieux</strong> — moins de 45 dB</li>\n  </ul>\n  <div class=\"lb-foot\">\n    <span class=\"lb-tag\">✓ Remboursé 30 jours</span>\n    <span class=\"lb-tag\">✓ Garantie 2 ans</span>\n  </div>\n<style>\n  .lb-wrap {\n    margin-top: 14px;\n    padding: 14px 14px 12px;\n    border-radius: 12px;\n    background: #FDF8F3;\n    border: 1px solid #E8D5BC;\n    position: relative;\n    overflow: hidden;\n  }\n  .lb-wrap::before {\n    content: '';\n    position: absolute;\n    top: 0; left: 0;\n    width: 4px; height: 100%;\n    background: linear-gradient(180deg, #D4AF7A, #B88B59);\n    border-radius: 12px 0 0 12px;\n  }\n  .lb-head {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    margin-bottom: 12px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #EDE0CE;\n    font-size: 13px;\n    font-weight: 700;\n    color: #1A1714;\n  }\n  .lb-ico {\n    width: 28px; height: 28px; min-width: 28px;\n    background: #fff;\n    border: 1px solid #E8D5BC;\n    border-radius: 7px;\n    display: flex; align-items: center; justify-content: center;\n  }\n  .lb-list {\n    margin: 0; padding: 0;\n    list-style: none;\n    display: grid;\n    gap: 8px;\n  }\n  .lb-list li {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-size: 13px;\n    color: #2F3A44;\n    line-height: 1.3;\n  }\n  .lb-list li strong { color: #1A1714; font-weight: 600; }\n  .lb-dot {\n    flex-shrink: 0;\n    width: 18px; height: 18px;\n    background: #B88B59;\n    border-radius: 50%;\n    color: #fff;\n    font-size: 9px;\n    font-weight: 900;\n    display: flex; align-items: center; justify-content: center;\n  }\n  .lb-foot {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 6px;\n    margin-top: 12px;\n    padding-top: 10px;\n    border-top: 1px solid #EDE0CE;\n  }\n  .lb-tag {\n    font-size: 11px;\n    font-weight: 600;\n    color: #B88B59;\n    background: #fff;\n    border: 1px solid #E8D5BC;\n    border-radius: 20px;\n    padding: 3px 10px;\n  }\n</style>\n</div>"
-          }
-        },
-        "quantity_selector_Czhgne": {
-          "type": "quantity_selector",
-          "settings": {
-            "full_width_classic": false,
-            "atc_append": "none",
-            "atc_append_heights": "stretch-quantity",
-            "enable_quantity_discounts": false,
-            "style": "normal",
-            "headline": "BUNDLE & SAVE",
-            "preselected": "option_1",
-            "display_selected_indicator": true,
-            "border_radius": 10,
-            "border_width": 2,
-            "color_scheme": "accent-1",
-            "enable_variant_selectors": true,
-            "enable_variant_selectors_on_quantity_of_1": false,
-            "update_prices": false,
-            "skip_unavailable": false,
-            "full_width_pickers": false,
-            "hide_pickers_overlay": true,
-            "pickers_label": "",
-            "image_width": 70,
-            "space_images": true,
-            "vertical_images_position": "top",
-            "vertical_prices_layout": "vertical",
-            "option_1_quantity": 1,
-            "option_1_badge": "",
-            "option_1_badge_style": "1",
-            "option_1_badge_color": "accent-1",
-            "option_1_label": "Buy [quantity]",
-            "option_1_benefit": "",
-            "option_1_benefit_position": "top",
-            "option_1_benefit_style": "outlined",
-            "option_1_benefit_color": "accent-1",
-            "option_1_caption": "You save [amount_saved]",
-            "option_1_percentage_off_text": "0",
-            "option_1_fixed_amount_off": "0",
-            "option_1_price_text": "[price]",
-            "option_1_compare_price": "compare_price",
-            "option_1_compare_price_text": "[compare_price]",
-            "option_2_quantity": 2,
-            "option_2_badge": "",
-            "option_2_badge_style": "1",
-            "option_2_badge_color": "accent-1",
-            "option_2_label": "Buy [quantity]",
-            "option_2_benefit": "",
-            "option_2_benefit_position": "top",
-            "option_2_benefit_style": "outlined",
-            "option_2_benefit_color": "accent-1",
-            "option_2_caption": "You save [amount_saved]",
-            "option_2_percentage_off_text": "0",
-            "option_2_fixed_amount_off": "0",
-            "option_2_price_text": "[price]",
-            "option_2_compare_price": "compare_price",
-            "option_2_compare_price_text": "[compare_price]",
-            "option_3_quantity": 3,
-            "option_3_badge": "",
-            "option_3_badge_style": "1",
-            "option_3_badge_color": "accent-1",
-            "option_3_label": "Buy [quantity]",
-            "option_3_benefit": "",
-            "option_3_benefit_position": "top",
-            "option_3_benefit_style": "outlined",
-            "option_3_benefit_color": "accent-1",
-            "option_3_caption": "You save [amount_saved]",
-            "option_3_percentage_off_text": "0",
-            "option_3_fixed_amount_off": "0",
-            "option_3_price_text": "[price]",
-            "option_3_compare_price": "compare_price",
-            "option_3_compare_price_text": "[compare_price]",
-            "option_4_quantity": 4,
-            "option_4_badge": "",
-            "option_4_badge_style": "1",
-            "option_4_badge_color": "accent-1",
-            "option_4_label": "Buy [quantity]",
-            "option_4_benefit": "",
-            "option_4_benefit_position": "top",
-            "option_4_benefit_style": "outlined",
-            "option_4_benefit_color": "accent-1",
-            "option_4_caption": "You save [amount_saved]",
-            "option_4_percentage_off_text": "0",
-            "option_4_fixed_amount_off": "0",
-            "option_4_price_text": "[price]",
-            "option_4_compare_price": "compare_price",
-            "option_4_compare_price_text": "[compare_price]",
-            "margin_top": 15,
-            "margin_bottom": 15
+            "custom_liquid": "<div class=\"benefits\">\n  {% if request.locale.iso_code == 'de' %}\n    <h3 class=\"benefits__title\">Was sich ab der ersten Dusche verändert</h3>\n    <ul class=\"benefits__list\">\n      <li>Weniger Chlor und Kalk im Wasser</li>\n      <li>Weichere Haut nach der Dusche</li>\n      <li>Geschmeidigeres und glänzenderes Haar</li>\n      <li>Weniger Juckreiz und Hautirritationen</li>\n      <li>Installation in 30 Sekunden</li>\n      <li>Für die ganze Familie geeignet</li>\n    </ul>\n  {% elsif request.locale.iso_code == 'en' %}\n    <h3 class=\"benefits__title\">What changes from your first shower</h3>\n    <ul class=\"benefits__list\">\n      <li>Less chlorine and limescale</li>\n      <li>Softer skin after showering</li>\n      <li>Smoother, shinier hair</li>\n      <li>Less itching and irritation</li>\n      <li>30-second installation</li>\n      <li>Suitable for the whole family</li>\n    </ul>\n  {% else %}\n    <h3 class=\"benefits__title\">Ce qui change dès la première douche</h3>\n    <ul class=\"benefits__list\">\n      <li>Moins de chlore et de calcaire</li>\n      <li>Peau plus douce après la douche</li>\n      <li>Cheveux plus souples et brillants</li>\n      <li>Moins de démangeaisons</li>\n      <li>Installation en 30 secondes</li>\n      <li>Convient à toute la famille</li>\n    </ul>\n  {% endif %}\n</div>\n\n<style>\n  .benefits{\n    margin-top: 14px;\n    padding: 16px 14px;\n    border-radius: 14px;\n    background: #F6F6F4;\n    border: 1px solid #E8E8E5;\n  }\n  .benefits__title{\n    margin: 0 0 12px 0;\n    font-size: 15px;\n    font-weight: 600;\n    color: #0E0E0E;\n    letter-spacing: -0.2px;\n  }\n  .benefits__list{\n    margin: 0;\n    padding: 0;\n    list-style: none;\n    display: grid;\n    gap: 10px;\n  }\n  .benefits__list li{\n    position: relative;\n    padding-left: 26px;\n    font-size: 14px;\n    line-height: 1.4;\n    color: #0E0E0E;\n    font-weight: 500;\n  }\n  .benefits__list li::before{\n    content: \"✓\";\n    position: absolute;\n    left: 0;\n    top: 0;\n    color: #9FB8A7;\n    font-weight: 700;\n    font-size: 15px;\n  }\n  @media (min-width: 990px){\n    .benefits__list{\n      grid-template-columns: 1fr 1fr;\n      gap: 12px 22px;\n    }\n  }\n</style>"
           }
         },
         "buy_buttons_khA4QY": {
@@ -357,37 +252,6 @@
             "margin_top": 3,
             "margin_bottom": 15
           }
-        },
-        "text_WnJx9J": {
-          "type": "text",
-          "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
-            "alignment": "center",
-            "text_color": "#121212",
-            "text_1": "<em>Payer en 4 fois avec Klarna</em>",
-            "text_2": "",
-            "text_3": "",
-            "icon_scale": 120,
-            "icon_color": "#121212",
-            "icon_1": "check_circle",
-            "filled_icon_1": false,
-            "icon_2": "check_circle",
-            "filled_icon_2": false,
-            "icon_3": "check_circle",
-            "filled_icon_3": false,
-            "width": "100%",
-            "direction": "horizontal",
-            "column_gap": 3,
-            "enable_bg": false,
-            "bg_color": "#f3f3f3",
-            "corner_radius": 40,
-            "padding": 3,
-            "border_size": 0,
-            "border_color": "#b7b7b7",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
         }
       },
       "block_order": [
@@ -395,10 +259,8 @@
         "price_cfgBWj",
         "variant_picker_wNP7PT",
         "custom_liquid_3ttgpY",
-        "quantity_selector_Czhgne",
         "buy_buttons_khA4QY",
-        "payment_badges_W3yFAN",
-        "text_WnJx9J"
+        "payment_badges_W3yFAN"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
@@ -961,9 +823,10 @@
   },
   "order": [
     "sp_video_hero_HREgNe",
-    "cfca4268-6358-426c-98ab-d292aeef11e5",
     "custom_liquid_pQfN7T",
+    "section_divider_8b9Xag",
     "horizontal_ticker_RVfnVn",
+    "section_divider_8Kr7kR",
     "featured_product_86AeAe",
     "ss_wave_2_Ggrapx",
     "horizontal_ticker_q8cdNH",
